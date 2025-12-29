@@ -1,7 +1,7 @@
 import logo from "../assets/logo/urgo-logo.jpg";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import "../styles/navbar.css";
+import "../styles/Navbar.css";
 
 export default function Navbar() {
     
