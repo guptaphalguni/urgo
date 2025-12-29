@@ -14,9 +14,7 @@ export default function Home() {
   return (
     
     <>
-    <section style={{ marginTop: "40px", textAlign: "center" }}>
-  <EmergencyButton />
-</section>
+    
 
 <hr style={{ margin: "50px 0" }} />
 
@@ -31,14 +29,20 @@ export default function Home() {
 
         {/* HERO + IMAGES ROW */}
         <section className="hero-row">
-          <div className="hero-left">
-            <Hero />
-          </div>
+  {/* LEFT SIDE */}
+  <div className="hero-left">
+    <Hero />
 
-          <div className="hero-right">
-            <ImageGrid />
-          </div>
-        </section>
+    <div className="hero-button">
+      <EmergencyButton />
+    </div>
+  </div>
+
+  {/* RIGHT SIDE */}
+  <div className="hero-right">
+    <ImageGrid />
+  </div>
+</section>
 
         {/* HELPLINES — unchanged */}
         <section className="helpline-section">
