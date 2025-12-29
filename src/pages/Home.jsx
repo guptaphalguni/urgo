@@ -20,10 +20,9 @@ export default function Home() {
 
 <hr style={{ margin: "50px 0" }} />
 
-<VolunteerDashboard />
 
 
-      <Navbar />
+      
     <div className="home-wrapper">
       <div className="home-bg" />
 

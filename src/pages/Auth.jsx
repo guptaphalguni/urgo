@@ -1,18 +1,24 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "../styles/auth.css";
 import logo from "../assets/logo/urgo-logo.jpg";
 import { auth } from "../firebase/firebase";
+
+
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
 } from "firebase/auth";
 
 export default function Auth() {
+  const navigate = useNavigate();
   const [mode, setMode] = useState("login"); // "login" | "signup"
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [error, setError] = useState("");
+  
+
 
   const handleAuth = async () => {
     setError("");
@@ -46,6 +52,8 @@ export default function Auth() {
         );
         alert("Signup successful");
       }
+      navigate("/dashboard");
+
 
       // ✅ CONFIRMATION (very important)
       console.log("Firebase user created/logged in:", userCredential.user);
