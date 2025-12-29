@@ -1,12 +1,27 @@
+import EmergencyButton from "../components/EmergencyButton";
+import VolunteerDashboard from "../components/VolunteerDashboard";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import ImageGrid from "../components/ImageGrid";
 import HelplineCard from "../components/HelplineCard";
 import Footer from "../components/Footer";
 
+
+
+
 export default function Home() {
   return (
+    
     <>
+    <section style={{ marginTop: "40px", textAlign: "center" }}>
+  <EmergencyButton />
+</section>
+
+<hr style={{ margin: "50px 0" }} />
+
+<VolunteerDashboard />
+
+
       <Navbar />
 
       <main style={{ display: "flex", gap: "60px", padding: "50px" }}>

@@ -9,7 +9,28 @@ export default function HelplineCard({ title, number }) {
 }
 
 const styles = {
-  card: {
+  fireStationCard: {
+    background: "var(--bg-card)",
+    padding: "22px",
+    borderRadius: "14px",
+    textAlign: "center",
+    width: "220px",
+  },
+  Hospitalcard: {
+    background: "var(--bg-card)",
+    padding: "22px",
+    borderRadius: "14px",
+    textAlign: "center",
+    width: "220px",
+  },
+  policeStationcard: {
+    background: "var(--bg-card)",
+    padding: "22px",
+    borderRadius: "14px",
+    textAlign: "center",
+    width: "220px",
+  },
+  ambulanceCard: {
     background: "var(--bg-card)",
     padding: "22px",
     borderRadius: "14px",
