@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Auth from "./pages/Auth";
 import VolunteerDashboard from "./components/VolunteerDashboard";
 import ProtectedRoute from "./components/ProtectedRoute";
+import HowItWorks from "./pages/HowItWorks";
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
             </ProtectedRoute>
           }
         />
+        <Route path="/how-it-works" element={<HowItWorks />} />
       </Routes>
     </BrowserRouter>
   );

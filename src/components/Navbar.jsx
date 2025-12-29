@@ -1,8 +1,11 @@
 import logo from "../assets/logo/urgo-logo.jpg";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import "../styles/navbar.css";
 
 export default function Navbar() {
+    
+
     const navigate = useNavigate();
 const [location, setLocation] = useState(null);
     const [locationError, setLocationError] = useState("");
@@ -40,7 +43,8 @@ const [location, setLocation] = useState(null);
 >
   Login / Sign Up as Volunteer
          
-        </button>
+              </button>
+              
         <button
   className="nav-btn helpline-btn"
   onClick={handleShareLocation}
@@ -48,7 +52,7 @@ const [location, setLocation] = useState(null);
   Share My Location
 </button> 
 {location && (
-  <div style={{ color: "#c41515ff", fontSize: "14px", marginTop: "8px" }}>
+  <div style={{ color: "#f7f2f2ff", fontSize: "14px", marginTop: "8px" }}>
     📍 Latitude: {location.latitude.toFixed(5)} <br />
     📍 Longitude: {location.longitude.toFixed(5)} <br />
     <a
@@ -67,10 +71,14 @@ const [location, setLocation] = useState(null);
     {locationError}
   </p>
 )}
+<button
+  className="nav-btn how-it-works-btn"
+  onClick={() => navigate("/how-it-works")}
+>
+  How It Works
+</button>
 
-        <button style={{ ...styles.btn, background: "var(--accent-gray)" }}>
-          How It Works
-        </button>
+
       </div>
     </nav>
   );

@@ -1,0 +1,25 @@
+/* Base navbar button */
+.nav-btn {
+  border: none;
+  padding: 10px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #ed1111;
+}
+
+/* HOW IT WORKS — BLUE */
+.how-it-works-btn {
+  background-color: #3b82f6; /* blue */
+  color: white;
+}
+
+/* optional hover */
+.how-it-works-btn:hover {
+  background-color: #2563eb;
+}
+.helpline-btn {
+  background-color: #dc2626; /* strong red */
+  color: white;
+}
+
